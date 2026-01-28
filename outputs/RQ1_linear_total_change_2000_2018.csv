@@ -1,0 +1,7 @@
+Feature,slope_per_year,change_18yrs,FeatureLabel,Direction
+acousticness,0.0022771170214220798,0.04098810638559744,Acousticness,Increased
+energy,-0.0029795664657521303,-0.05363219638353835,Energy,Decreased
+tempo,0.002244565049877274,0.04040217089779093,Tempo,Increased
+danceability,-3.239939508903135e-4,-0.005831891116025643,Danceability,Decreased
+loudness,-5.29265640169263e-4,-0.009526781523046734,Loudness,Decreased
+valence,-0.006957062475565786,-0.12522712456018414,Valence,Decreased
