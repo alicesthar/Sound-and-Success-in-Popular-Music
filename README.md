@@ -1,7 +1,8 @@
 # Sound and Success in Popular Music
 
-This project explores how the acoustic characteristics of popular music have evolved between 2000 and 2018, and how these features relate to commercial success.  
-The analysis uses the MusicOSet dataset, combining chart performance data with acoustic features.
+This project examines how the acoustic characteristics of popular music have evolved between 2000 and 2018, and how these characteristics are associated with commercial success. Using the MusicOSet dataset, the analysis combines exploratory data analysis with statistical modelling to investigate long-term trends in musical sound and differences between historical chart eras.
+
+The project has been developed as part of the IJC437 Introduction to Data Science module in the MSc Data Science programme at the University of Sheffield.
 
 ## Research Questions
 - **EDA**: How have average acoustic characteristics changed over time (2000–2018)?
@@ -9,12 +10,44 @@ The analysis uses the MusicOSet dataset, combining chart performance data with a
 - **RQ2**: Which acoustic features are associated with being a hit (top 25%)?
 - **RQ3**: How do acoustic feature distributions differ between early (2000–2003) and late (2015–2018) eras?
 
+## Key Findings
+-	Several acoustic features show clear long-term trends, indicating gradual changes in the sound of popular music across the study period.
+-	The magnitude and direction of change differ across features, suggesting that musical evolution is not uniform.
+-	Logistic regression analysis identifies specific acoustic characteristics that are statistically associated with higher odds of chart success.
+-	Songs from the late 2010s display distinct acoustic distributions compared with those from the early 2000s, highlighting structural differences between musical eras.
+	
 ## Dataset
+This project uses the MusicOSet dataset (2000–2018), an open dataset designed for music data mining research.
+
 - MusicOSet (2000–2018)  
 - Files used:
   - `song_chart.csv`
   - `song_pop.csv`
   - `acoustic_features.csv`
+All datasets are used in their original form and are placed in the data_raw/ directory.
+
+## R Code
+
+All analysis is conducted in R and implemented in a single, fully commented script (Sound-and-Success-in-Popular-Music-25196971.R).
+The code follows a consistent style and naming convention and is structured to reflect the analytical workflow:
+	1.	Data loading and auditing
+	2.	Data cleaning and feature scaling
+	3.	Exploratory data analysis
+	4.	Statistical modelling for each research question
+	5.	Figure and table generation
+
+Intermediate results and audit information are printed to the R console to support transparency and reproducibility.
+
+## Instructions for Running the Code
+
+To reproduce the analysis:
+	1.	Clone or download this repository.
+	2.	Place the required MusicOSet data files in the data_raw/ directory.
+	3.	Open Sound-and-Success-in-Popular-Music-2519697.R in RStudio.
+	4.	Ensure the required R packages are installed (the script automatically checks and installs missing packages).
+	5.	Run the script sequentially from top to bottom.
+
+All figures are saved automatically to the plots_final/ directory, and summary tables are saved to the outputs/ directory.
 
 ## Repository Structure
 ```text
@@ -23,13 +56,3 @@ The analysis uses the MusicOSet dataset, combining chart performance data with a
 ├── plots_final/         # Final figures used in the report
 ├── analysis.R           # Main analysis script
 └── README.md            # Project overview and instructions
-
-## How to run
-
-	1.	Place the MusicOSet files in the data_raw/ folder.
-	2.	Run Sound-and-Success-in-Popular-Music-25196971.R from start to finish in RStudio.
-
-## Outputs
-	•	Figures are saved in plots_final/
-	•	Summary tables are saved in outputs/
-	•	Key results are also printed to the R console for transparency.
