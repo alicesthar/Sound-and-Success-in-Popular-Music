@@ -11,10 +11,10 @@ The project has been developed as part of the IJC437 Introduction to Data Scienc
 - **RQ3**: How do acoustic feature distributions differ between early (2000–2003) and late (2015–2018) eras?
 
 ## Key Findings
--	Several acoustic features show clear long-term trends, indicating gradual changes in the sound of popular music across the study period.
--	The magnitude and direction of change differ across features, suggesting that musical evolution is not uniform.
--	Logistic regression analysis identifies specific acoustic characteristics that are statistically associated with higher odds of chart success.
--	Songs from the late 2010s display distinct acoustic distributions compared with those from the early 2000s, highlighting structural differences between musical eras.
+-	Several acoustic features exhibit clear long-term trends between 2000 and 2018, indicating gradual changes in the sound of popular chart music over time. However, these changes are not uniform across features, suggesting that musical evolution has occurred along specific dimensions rather than as a broad shift in all acoustic properties.
+-	Linear trend analysis shows that valence and energy experience the largest overall declines across the study period, while tempo and acousticness show modest increases. In contrast, danceability and loudness remain relatively stable, indicating that not all aspects of musical structure change at the same rate.
+-	Logistic regression analysis identifies several acoustic features that are statistically associated with chart success. Higher loudness and danceability are linked to increased odds of a song being classified as a hit (top 25%), whereas higher energy and acousticness are associated with lower hit odds. Tempo shows no strong association with hit status in the multivariate model.
+-	Comparisons between early (2000–2003) and late (2015–2018) eras reveal clear differences in the distributions of multiple acoustic features. Songs from the late era tend to exhibit lower valence and energy, alongside slightly higher tempo and acousticness, highlighting structural differences in the acoustic profiles of popular music across the two periods.
 	
 ## Dataset
 This project uses the MusicOSet dataset (2000–2018), an open dataset designed for music data mining research.
